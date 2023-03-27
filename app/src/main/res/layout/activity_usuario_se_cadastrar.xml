@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsuarioSeCadastrarActivity"
+    android:background="@color/verde_claro" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/alerta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alerta"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/text_mensagem_alerta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensagem qualquer para o alerta! Mensagem qualquer para o alerta! Mensagem qualquer para o alerta!"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tela_cadastro_usuario_label_nome"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/edit_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_com_bordas_arredondadas"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="@string/txt_tela_cadastrar_usuario_hint_nome"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <!--
+            Feedback do nome do usuário
+        -->
+        <TextView
+            android:id="@+id/text_feedback_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Informe seu nome"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tela_cadastro_usuario_label_email"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_com_bordas_arredondadas"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/txt_tela_cadastrar_usuario_hint_email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <!--
+            Feedback do e-mail do usuário
+        -->
+        <TextView
+            android:id="@+id/text_feedback_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Informe seu e-mail"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/edit_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_com_bordas_arredondadas"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Digite sua senha..."
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <!--
+            Feedback da senha do usuário
+        -->
+        <TextView
+            android:id="@+id/text_feedback_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Informe sua senha"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar senha"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/edit_senha_confirmacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_com_bordas_arredondadas"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Repita a senha..."
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <!--
+            Feedback da senha de confirmação do usuário
+        -->
+        <TextView
+            android:id="@+id/text_feedback_senha_confirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Digite novamente sua senha"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <Button
+            android:id="@+id/button_usuario_se_cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tela_cadastrar_usuario_botao"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/verde_escuro"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
