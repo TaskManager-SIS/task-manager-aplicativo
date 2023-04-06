@@ -2,6 +2,7 @@ package br.com.gabrielsantos.app_controle_tarefas.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,14 +23,14 @@ public class ControlaAlerta {
     @SuppressLint("ResourceAsColor")
     public void apresentarAlertaSucesso(String mensagemSucesso) {
         this.alerta.setVisibility(View.VISIBLE);
-        this.alerta.setBackgroundColor(R.color.verde_alerta_sucesso);
+        this.alerta.setBackgroundColor(Color.GREEN);
         this.mensagemAlerta.setText(mensagemSucesso);
     }
 
     @SuppressLint("ResourceAsColor")
     public void apresentarAlertaErro(String mensagemErro) {
         this.alerta.setVisibility(View.VISIBLE);
-        this.alerta.setBackgroundColor(R.color.vermelho_alerta_erro);
+        this.alerta.setBackgroundColor(Color.RED);
         this.mensagemAlerta.setText(mensagemErro);
     }
 }

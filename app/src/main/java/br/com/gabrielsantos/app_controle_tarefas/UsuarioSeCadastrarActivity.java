@@ -103,7 +103,10 @@ public class UsuarioSeCadastrarActivity extends AppCompatActivity implements Vie
 
     // método para limpar os campos do formulário de cadastrado de usuário
     private void limparFormulario() {
-
+        this.camposFormulario.get(0).setText("");
+        this.camposFormulario.get(1).setText("");
+        this.camposFormulario.get(2).setText("");
+        this.camposFormulario.get(3).setText("");
     }
 
     // método para fechar o teclado ao clicar no botão
@@ -182,10 +185,14 @@ public class UsuarioSeCadastrarActivity extends AppCompatActivity implements Vie
 
                             if (codigoHttp == 201) {
                                 // usuário cadastrado com sucesso!
+                                controlaAlerta.apresentarAlertaSucesso("Cadastro realizado com sucesso!");
+                                limparFormulario();
                             } else if (codigoHttp == 200) {
                                 // ocorreu algum erro por ação do usuário
+                                controlaAlerta.apresentarAlertaErro("Erro! Informe dados válidos!");
                             } else {
                                 // erro 500 -> falha na requisição!
+                                controlaAlerta.apresentarAlertaErro("Ocorreu um erro, tente novamente em instantes!");
                             }
 
                             controlaTelaLoad.esconder();

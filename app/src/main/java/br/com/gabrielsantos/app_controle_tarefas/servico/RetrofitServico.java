@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitServico {
 
-    private static final String URL_BASE = "http://192.168.0.103:8080/index.php/";
+    private static final String URL_BASE = "https://www.taskmanager.targetbr.biz/index.php/";
 
     public static Retrofit obterServico() {
 
