@@ -189,7 +189,7 @@ public class UsuarioSeCadastrarActivity extends AppCompatActivity implements Vie
                                 limparFormulario();
                             } else if (codigoHttp == 200) {
                                 // ocorreu algum erro por ação do usuário
-                                controlaAlerta.apresentarAlertaErro("Erro! Informe dados válidos!");
+                                controlaAlerta.apresentarAlertaErro(usuarioRetornoResposta.getMsg());
                             } else {
                                 // erro 500 -> falha na requisição!
                                 controlaAlerta.apresentarAlertaErro("Ocorreu um erro, tente novamente em instantes!");
