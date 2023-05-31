@@ -13,9 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
     <!-- Tema da splash-screen -->
     <style name="SplashTema" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/verde_fundo_tela_login_splash_screen</item>
         <item name="android:background">@color/verde_fundo_tela_login_splash_screen</item>
     </style>
+
 </resources>
